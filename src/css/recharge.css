@@ -1,0 +1,108 @@
+.recharge-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.recharge-options {
+  width: 45%;
+  padding: 20px;
+  color: white;
+}
+
+.recharge-options h2 {
+  margin-bottom: 10px;
+}
+
+.recharge-options p {
+  margin-bottom: 20px;
+}
+
+.recharge-button:hover {
+  background-color: #555;
+}
+
+.option-group{
+    margin-bottom: 20px;
+}
+
+.qr-code {
+  width: 45%;
+  text-align: center;
+}
+
+.qr-code img {
+  max-width: 100%;
+  height: auto;
+}
+
+.recharge-button.selected {
+  background-color: #555;
+}
+.recharge-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recharge-button:hover {
+  background-color: #555;
+}
+
+.recharge-button.selected {
+  background-color: #555;
+}
+
+
+.recharge-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.recharge-button:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+.recharge-button.selected {
+    background-color: #555;
+}
+
+.send-request-button {
+    background-color: #4CAF50; /* Màu xanh */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.send-request-button:hover {
+    background-color: #45a049; /* Màu xanh đậm */
+    transform: translateY(-3px);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}

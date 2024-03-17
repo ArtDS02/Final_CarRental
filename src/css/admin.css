@@ -1,0 +1,39 @@
+.side-bar{
+    position: absolute;
+    color: #a4aecc;
+    border-right: 1px solid rgb(209, 186, 186);
+    width: 15%;
+    height: 100vh;
+    padding: 20px 10px;
+}
+
+.logo-admin{
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(174, 171, 171);
+    padding: 28px 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.side-group{
+    margin-bottom: 30px;
+}
+
+.dashboard{
+    text-align: center;
+    justify-content: center;
+}
+
+.dashboard p{
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.dashboard p:hover{
+    transition: all 0.3s ease;
+    color: black;
+    scale: 1.1;
+}
+

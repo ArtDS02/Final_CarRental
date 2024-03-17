@@ -1,0 +1,79 @@
+
+.content-admin{
+    /* background-color: red; */
+    position: absolute;
+    justify-content: space-around;
+    background-color: #F4F7FE;
+    padding: 5px;
+    right: 0;
+    width: 85%;
+    height: 100vh;
+}
+
+.request-group-header{
+    margin: 20px 70px;
+    padding: 10px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(56, 56, 56, 0.4);
+    border: none;
+    width: 90%;
+}
+
+.request-group{
+    margin: 20px 70px;
+    padding: 10px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(56, 56, 56, 0.4);
+    border: none;
+    width: 90%;
+}
+
+.request-group{
+    animation-name: moveFromBottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes moveFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content p{
+    color:black;
+    font-size: 15px;
+}
+
+.request-button button{
+    text-decoration: none; 
+    background-color: #d4ebeb;
+    color: #939EBC;
+    width:100px; 
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding:5px;
+    border:#68ecec
+}
+
+.request-button button a{
+    text-decoration: none;
+    color: black;
+}
+
+.request-button button:hover{
+    background-color: #7fe7e7;
+    transition: all 0.3s ease;
+    scale: 1.1;
+    color: #939EBC;
+}

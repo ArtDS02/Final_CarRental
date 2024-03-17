@@ -1,0 +1,35 @@
+.about-container {
+    background-color: #222222;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,216 @@
+.container{
+    padding-top: 30px;
+    background-color: #1b1b1b;
+    text-decoration: none;
+}
+.cars1 {
+    position: relative;
+}
+.cars1 .cars1-carousel {
+    position: relative;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.cars1 .cars1-carousel.owl-carousel .owl-stage-outer {
+    overflow: visible;
+    padding: 0px 0px 0px;
+}
+.cars1 .item {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+.cars1 .item .img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 20px;
+    
+        width: 100%;
+    transform: scale(1);
+    transition: transform 500ms ease;
+}
+
+
+.cars1 .item:hover img {
+    transform: scale(1.05);
+}
+.cars1 .item .con {
+    position: relative;
+    display: block;
+    background-color: #222;
+    padding: 30px 25px;
+    margin-top: -55px;
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    z-index: 2;
+    visibility: visible;
+    opacity: 0;
+    border-radius: 20px;
+}
+.cars1 .item .con.opacity-1 { 
+    opacity: 0;
+}
+.cars1 .item .con.active{
+    visibility: visible;
+    opacity: 1;
+}
+.cars1 .item .con .title,
+.cars1 .item .con .title a {
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    font-size: 21px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2em;
+    transition: all 500ms ease;
+}
+.cars1 .item .con .details {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 0;
+    margin-right: 10px;
+    transition: all 500ms ease;
+}
+.cars1 .item .con .details span {
+    margin-right: 10px;
+}
+.cars1 .item .con .details span i {
+    color: #f5b754;
+    margin-right: 2px;
+    font-style: normal;
+}
+/* book */
+.cars1 .item .con .book {
+    text-align: -webkit-right;
+    margin-top: 1px;
+}
+.cars1 .item .con .book .btn {
+    margin: 0;
+    background: #f5b754;
+    padding: 14px;
+    color: #1b1b1b;
+    border-radius: 30px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+.cars1 .item .con .book .btn:hover {
+    scale: 1.2;
+    background: #f0e7cc;
+    color: #1b1b1b;
+}
+.cars1 .item .con .book > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.cars1 .item .con .book > div:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.cars1 .item .con .book > div > span {
+    display: block;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #999;
+}
+.cars1 .item .con .book .price {
+    font-family: 'Outfit', sans-serif;
+    font-size: 21px;
+    line-height: 1.2em;
+    color: #f5b754;
+    font-weight: 700;
+}
+
+/* Pagination */
+.pagination-wrap {
+    padding: 0;
+    margin: 0;
+}
+.pagination-wrap li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.pagination-wrap li a {
+    background: #222;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    border: 1px solid #222;
+    border-radius: 100%;
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease;
+    transform-style: preserve-3d;
+}
+.pagination-wrap li a i {
+    font-size: 11px;
+}
+.pagination-wrap li a:hover {
+    opacity: 1;
+    text-decoration: none;
+    background: #f5b754;
+    border: 1px solid #f5b754;
+    color: #1b1b1b;
+    transform: translate3d(0px, -6px, 0.01px);
+}
+.pagination-wrap li a.active {
+    background-color: #f5b754;
+    border: 1px solid #f5b754;
+    color: #1b1b1b;
+}
+@media screen and (max-width: 768px) {
+    .pagination-wrap {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+/* prev/next post */
+.post-prev-next {
+  padding: 45px 0;
+  border: none;
+  border-top: 1px solid #222;
+  background-color: #222;
+}
+@media (max-width: 576px) {
+  .post-prev-next {
+    text-align: center;
+  }
+  .post-prev-next-left {
+        margin-bottom: 10px;
+    }
+}
+.post-prev-next a {
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+    line-height: 1em;
+}
+.post-prev-next a i {
+    font-size: 28px;
+    color: #f5b754;
+}
+.post-prev-next a i:hover,
+.post-prev-next a:hover {
+    color: #fff;
+}
+.post-prev-next .post-prev-next-left a i {
+  margin-right: 5px;
+  font-size: 13px;
+}
+.post-prev-next .post-prev-next-right a i {
+ font-size: 13px;
+  margin-left: 0;
+  margin-left: 5px;
+}

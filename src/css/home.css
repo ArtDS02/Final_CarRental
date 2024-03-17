@@ -1,0 +1,185 @@
+.header {
+    max-height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(19, 19, 19, 0.279);
+    color: white; /* Màu chữ trắng */
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    opacity: 0; /* Ban đầu ẩn đi */
+    transition: opacity 0.5s ease; /* Hiệu ứng chuyển đổi opacity trong 0.5s */
+}
+
+.carousel-item.active .carousel-caption {
+    opacity: 1; /* Khi slide hiện active thì hiển thị với opacity là 1 */
+    transition: opacity 0.5s ease; /* Hiệu ứng chuyển đổi opacity trong 0.5s */
+}
+
+.carousel-caption a {
+    border-radius: 30px;
+}
+
+.carousel-caption a:hover {
+    background-color: #FFB84B;
+}
+
+.carousel-caption h3,
+.carousel-caption h1,
+.carousel-caption h5 {
+    margin-bottom: 20px;
+}
+
+.button-1,
+.button-2 {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button-1:hover,
+.button-2:hover {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.ti-arrow-top-right::before {
+    content: "\2192";
+    margin-left: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+
+
+.carousel-caption button {
+    color: white; /* Màu chữ trắng cho các button */
+    background-color: gray; /* Màu nền xám cho các button */
+    border: none; /* Không có đường viền */
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.carousel-caption button:hover {
+    color: yellow; /* Màu chữ vàng khi hover vào */
+    background-color: black; /* Màu nền đen khi hover vào */
+}
+
+
+/* process */
+
+.process {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.process .section-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #F5B754;
+}
+
+.process .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.process .item {
+    text-align: left;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #333333;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.process .item h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.process .item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.process .numb {
+    position: relative;
+    margin-top: 20px;
+    max-width: fit-content;
+}
+
+
+.process .numb .number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.process .shap-left-top,
+.process .shap-right-bottom {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    background-color: #333333;
+    z-index: -1;
+}
+
+.process .shap-left-top {
+    left: -10px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.process .shap-right-bottom {
+    right: -10px;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.process p {
+    font-size: 16px;
+    color: #cccccc;
+    margin-top: 30px;
+}
+
+.process .ti-info {
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 10px;
+}

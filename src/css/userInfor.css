@@ -1,0 +1,59 @@
+.user-information-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Để tạo khoảng cách giữa nội dung và lề trang */
+    padding: 20px;
+    background-color: #1a1a1a; /* Màu nền đậm */
+    color: #ffd700; /* Màu chữ vàng */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Hiệu ứng bóng đổ */
+    transition: box-shadow 0.3s ease; /* Hiệu ứng chuyển động */
+  }
+  
+  .user-information-container:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* Hiệu ứng bóng đổ lớn hơn khi hover */
+  }
+  
+  .user-information-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Canh trái và phải của các nhóm thông tin */
+  }
+  
+  .information-group {
+    width: 48%; /* Đặt chiều rộng của mỗi nhóm thông tin để tạo hai cột */
+  }
+  
+  .information {
+    margin-bottom: 15px; /* Tăng khoảng cách giữa các thông tin */
+  }
+  
+  .information h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .information p {
+    font-size: 16px;
+  }
+  
+  .recharge-button {
+    width: 100%; /* Đảm bảo nút "Recharge" chiếm toàn bộ chiều rộng của container */
+  }
+  
+  .recharge-button button {
+    padding: 12px 20px; /* Tăng kích thước nút */
+    background-color: #ffd700; /* Màu vàng */
+    color: #1a1a1a; /* Màu chữ đen */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động */
+  }
+  
+  .recharge-button button:hover {
+    background-color: #ffcc00; /* Màu vàng nhạt khi hover */
+    transform: scale(1.05); /* Phóng to một chút khi hover */
+  }
+  
