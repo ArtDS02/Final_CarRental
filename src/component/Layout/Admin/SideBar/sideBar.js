@@ -13,6 +13,10 @@ function SideBar() {
     window.location = "/request"
   }
 
+  function handleRentalClick() {
+    window.location = "/rentalRequest"
+  }
+
   function handleProductClick() {
     window.location = "/product"
   }
@@ -39,7 +43,12 @@ function SideBar() {
       </div>
       <div className="side-group">
         <div onClick={handleRequestClick} className="dashboard">
-          <p>Request Manage</p>
+          <p>Recharge Request</p>
+        </div>
+      </div>
+      <div className="side-group">
+        <div onClick={handleRentalClick} className="dashboard">
+          <p>Rental Request</p>
         </div>
       </div>
       <div onClick={handleProductClick} className="side-group">

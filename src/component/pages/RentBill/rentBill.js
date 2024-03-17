@@ -20,13 +20,13 @@ const Login = () => {
                         <h2 style={{ textAlign: 'center' }}>Your Order</h2>
                         <form>
                             <div className="features"><span><i class="fa-solid fa-car"></i> Vehicle</span>
-                                <p>Bentley Bentayga</p>
+                                <p style={{color:"white"}}>Bentley Bentayga</p>
                             </div>
                             <div className="features"><span><i class="fa-solid fa-car"></i> Type:</span>
-                                <p>Luxury Cars</p>
+                                <p style={{color:"white"}}>Luxury Cars</p>
                             </div>
                             <div className="features"><span><i class="fa-solid fa-car"></i> Down payment</span>
-                                <p>100.000 VND</p>
+                                <p style={{color:"white"}}>100.000 VND</p>
                             </div>
                             <div className="form-group">
                                 <button type="submit"><a style={{textDecoration:"none",color:"white"}} href="/orderList">Accept</a></button>
@@ -36,13 +36,13 @@ const Login = () => {
                     <div className='content' style={{paddingTop:"50px"}}>
                         <form onSubmit={handlePay}>
                             <div className="features"><span><i class="fa-solid fa-wallet"></i> Your Wallet</span>
-                                <p>500.000 VND</p>
+                                <p style={{color:"white"}}>500.000 VND</p>
                             </div>
                             <div className="features"><span><i class="fa-solid fa-wallet"></i> Payment:</span>
-                                <p>100.000 VND</p>
+                                <p style={{color:"white"}}>100.000 VND</p>
                             </div>
                             <div className="features"><span><i class="fa-solid fa-wallet"></i> Remaining balance after payment:</span>
-                                <p>400.000 VND</p>
+                                <p style={{color:"white"}}>400.000 VND</p>
                             </div>
                         </form>
                     </div>

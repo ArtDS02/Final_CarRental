@@ -18,6 +18,8 @@ import AdminHome from "../component/pages/Admin/index";
 import AdminRequest from "../component/pages/Admin/request";
 import AdminProduct from "../component/pages/Admin/product";
 import AdminUser from "../component/pages/Admin/user";
+import AdminRental from "../component/pages/Admin/rental";
+
 
 
 
@@ -29,6 +31,7 @@ import AdminUser from "../component/pages/Admin/user";
 const publicRoutes = [
     { path: '/admin', component: AdminHome, layout: AdminLayout},
     { path: '/adminUser', component: AdminUser, layout: AdminLayout},
+    { path: '/rentalRequest', component: AdminRental, layout: AdminLayout},
     { path: '/product', component: AdminProduct, layout: AdminLayout},
     { path: '/request', component: AdminRequest, layout: AdminLayout},
     { path: '/', component: Home, layout: DefaultLayout},
